@@ -214,7 +214,7 @@ $("cr").oninput=function(){$("cu").textContent=this.value;$("ch").textContent=Ma
 $("cf").onsubmit=function(e){e.preventDefault();location.href="mailto:Suryakaneganti@gmail.com?subject="+encodeURIComponent("Message from your portfolio")+"&body="+encodeURIComponent($("cm").value+"\n\n"+$("cn").value)};
 $("yr").textContent=new Date().getFullYear();
 
-var PHOTO="";/* headshot file name, e.g. "headshot.jpg" */
+var PHOTO="Myphoto.jpg";/* headshot file name, e.g. "headshot.jpg" */
 if(PHOTO){var im=new Image();im.alt="Jaya Surya Kaneganti";im.onload=function(){$("av").textContent="";$("av").appendChild(im)};im.src=PHOTO}
 
 var rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
